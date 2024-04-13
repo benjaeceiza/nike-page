@@ -21,7 +21,7 @@ function control(contador, cantidadFuncion) {
     return cantidadFuncion;
 }
 
-
+let precioTotal = 0;
 let opcion;
 let cantidad;
 let contadorTacos = 0;
@@ -31,7 +31,7 @@ let contadorMila = 0;
 
 
 do {
-    opcion = parseInt(prompt("MENU DE OPCIONES:\n\n1.Tacos\n2.Milanesas\n3.Pastas\n4.Hamburguesa\n5.Carrito\n\n6.salir"));
+    opcion = parseInt(prompt("MENU DE OPCIONES:\n\n1.Tacos = $15\n2.Milanesas = $20\n3.Pastas = $25\n4.Hamburguesa = $20\n5.Carrito\n\n6.salir"));
     switch (opcion) {
         case 1:
 
@@ -46,6 +46,7 @@ do {
             cantidad = control(contadorTacos, cantidad);
 
             contadorTacos = contadorTacos + cantidad;
+            precioTotal = precioTotal + (15*cantidad);
             break;
         case 2:
 
@@ -58,6 +59,7 @@ do {
             cantidad = control(contadorMila, cantidad);
 
             contadorMila = contadorMila + cantidad;
+            precioTotal = precioTotal + (20*cantidad);
             break;
 
         case 3:
@@ -70,6 +72,7 @@ do {
             cantidad = control(contadorPastas, cantidad);
 
             contadorPastas = contadorPastas + cantidad;
+            precioTotal = precioTotal + (25*cantidad);
             break;
         case 4:
             if (contadorHam === 50) {
@@ -81,9 +84,10 @@ do {
             cantidad = control(contadorHam, cantidad);
 
             contadorHam = contadorHam + cantidad;
+            precioTotal = precioTotal + (20*cantidad);
             break;
         case 5:
-            alert("CARRITO DE COMPRAS:\n\nORDENES DE TACOS: " + contadorTacos + "\n\nORDENES DE MILANESAS: " + contadorMila + "\n\nORDENES DE PASTAS: " + contadorPastas + "\n\nORDENES DE HAMBURGUESAS: " + contadorHam);
+            alert("CARRITO DE COMPRAS:\n\nORDENES DE TACOS: " + contadorTacos + "\n\nORDENES DE MILANESAS: " + contadorMila + "\n\nORDENES DE PASTAS: " + contadorPastas + "\n\nORDENES DE HAMBURGUESAS: " + contadorHam +"\n\nTOTAL A PAGAR: " + precioTotal);
             break;
         case 6:
             alert("GRACIAS POR USAR EL MENU, VUELVA PRONTOS");
