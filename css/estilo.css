@@ -30,6 +30,10 @@ body {
 .header__input {
     height: 30px;
     width: 200px;
+    background-color: #ffffff11;
+    border: 1px solid rgba(255, 255, 255, 0.386);
+    border-radius: 5px;
+    text-align: center;
 }
 
 .header__div {
@@ -59,14 +63,24 @@ body {
     text-decoration: none;
     padding: 10px;
     color: white;
+    font-family: 'nike';
+    text-transform: uppercase;
 }
 
 .header__link:hover {
     background-color: rgba(255, 255, 255, 0.509);
-    color: black;
     transition: all .0s;
+    border-radius: 5px;
 }
 
+.carrucel-mob {
+    display: none;
+}
+
+.banner-mob {
+    height: 80vw;
+    width: 95%;
+}
 
 .carousel-inner {
     text-align: center;
@@ -244,8 +258,8 @@ body {
 
 .footer__div {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -266,21 +280,23 @@ body {
     font-size: 13px;
 }
 
-.footer_list li a:hover{
+.footer_list li a:hover {
     color: rgb(203, 203, 203);
     transition: all.5s;
 }
 
 .redes {
-    display: flex;
+    display: flex;    
 }
+
+
 
 .redes img {
     height: 40px;
     margin: 5px;
 }
 
-.footer__informativo{
+.footer__informativo {
     display: flex;
     margin-top: 50px;
     align-items: start;
@@ -288,29 +304,32 @@ body {
     flex-wrap: wrap;
 }
 
-.footer__informativo__div{
+.footer__informativo__div {
     display: flex;
+    justify-content: center;
 }
 
-.footer__informativo__div img{
+.footer__informativo__div img {
     height: 20px;
 }
-.footer__informativo__div p{
+
+.footer__informativo__div p {
     margin-left: 20px;
 }
 
-.footer__informativo__div a{
+.footer__informativo__div a {
     text-decoration: none;
     color: white;
 }
 
-.footer__informativo__div__dos a{
+.footer__informativo__div__dos a {
     text-decoration: none;
     color: gray;
     margin-left: 20px;
+    font-size: 10px;
 }
 
-.footer__informativo__div__dos a:hover{
+.footer__informativo__div__dos a:hover {
     color: rgb(203, 203, 203);
 }
 
@@ -348,8 +367,25 @@ body {
     }
 
 }
+@media (max-width:690px) {
+.footer{
+    justify-content: center;
+    align-items: center;
+   
+}
+
+}
 
 @media (max-width:660px) {
+
+    .carrucel-desktop {
+        display: none;
+    }
+
+    .carrucel-mob {
+        display: block;
+    }
+
     .section-index .modelo {
         height: 65vw;
         margin-left: 0;
@@ -358,6 +394,7 @@ body {
     .ropas {
         margin-left: 0;
     }
+    
 }
 
 

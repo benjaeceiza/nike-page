@@ -11,7 +11,9 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
+        <!-- MENU DE NAVEGACIÓN -->
         <nav class="header__nav">
             <a href=""><img class="header__img" src="./recursos/klipartz.com.png" alt=""></a>
             <div class="header__div">
@@ -26,47 +28,79 @@
             </ul>
             <a href=""><img class="carrito" src="./recursos/carrito.png" alt=""></a>
         </nav>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
+        <!-- CARRUCEL DESKTOP -->
+        <div class="carrucel-desktop">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./recursos/banner/mercurial.jpg" class="ancho" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./recursos/banner/images (1).jpg" class="ancho" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./recursos/banner/images.jpg" class="ancho" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./recursos/banner/nike.jpg" class="ancho" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./recursos/banner/descarga (1).jpg" class="ancho" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./recursos/banner/mercurial.jpg" class="ancho" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./recursos/banner/images (1).jpg" class="ancho" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./recursos/banner/images.jpg" class="ancho" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./recursos/banner/nike.jpg" class="ancho" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./recursos/banner/descarga (1).jpg" class="ancho" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+        <!-- CARRUCEL MOBILE -->
+        <div class="carrucel-mob">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./recursos/banner-mob/banner-mob-1.jpg" class="banner-mob" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./recursos/banner-mob/banner-mob-2.jpg" class="banner-mob" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./recursos/banner-mob/banner-mob-3.png" class="banner-mob" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./recursos/banner-mob/banner-mob-4.jpg" class="banner-mob" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./recursos/banner-mob/banner-mon-5.jpg" class="banner-mob" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
     </header>
     <!-- MAIN -->
     <main>
