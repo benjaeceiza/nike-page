@@ -89,8 +89,9 @@ body {
 }
 
 .ancho {
-    height: 30vw;
+    width: 80vw;
 }
+
 
 
 /*----------- MAIN -----------*/
@@ -152,6 +153,9 @@ body {
     margin: 20px;
     border-radius: 5%;
     background-color: #F2F2F2;
+    height: 16rem;
+    width: 16rem;
+    ;
 }
 
 .card:hover {
@@ -160,13 +164,20 @@ body {
 }
 
 .ropas img {
-    width: 190px;
+    width: 100%;
     margin: auto;
+    overflow: hidden;
+
 
 }
 
+
 .card-text {
     background-color: white;
+}
+
+.women {
+    flex-direction: row-reverse;
 }
 
 .botones-verde {
@@ -286,7 +297,7 @@ body {
 }
 
 .redes {
-    display: flex;    
+    display: flex;
 }
 
 
@@ -339,6 +350,25 @@ body {
 /* ---- MEDIA QUERYS ---- */
 
 
+@media (max-width:1200px) {
+
+    .section-index {
+        flex-direction: column;
+
+
+    }
+
+    .ropas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 20px;
+    }
+}
+
 @media (max-width:840px) {
     .header__nav {
         justify-content: center;
@@ -367,12 +397,13 @@ body {
     }
 
 }
+
 @media (max-width:690px) {
-.footer{
-    justify-content: center;
-    align-items: center;
-   
-}
+    .footer {
+        justify-content: center;
+        align-items: center;
+
+    }
 
 }
 
@@ -386,6 +417,10 @@ body {
         display: block;
     }
 
+    .section-index {
+        justify-content: center;
+    }
+
     .section-index .modelo {
         height: 65vw;
         margin-left: 0;
@@ -393,8 +428,21 @@ body {
 
     .ropas {
         margin-left: 0;
+        flex-direction: column;
+
     }
-    
+   
+   .modelo{
+    width: 75vw;
+   }
+    .card {
+        margin: auto;
+        min-width: 75vw;
+        height: 400px;
+        margin-top: 20px;
+       
+    }
+
 }
 
 
