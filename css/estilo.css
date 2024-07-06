@@ -9,12 +9,17 @@
 
 /* FONDO BODY */
 body {
-    background: linear-gradient(rgb(87, 87, 87), rgb(71, 70, 70), rgb(95, 95, 95), rgb(44, 44, 44), black)
+   background-color: black;
 }
 
 /* HEADER */
 
-
+/* .header{
+    background-image: url(../recursos/banner/fondo-nav.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+} */
 
 .header__nav {
     display: flex;
@@ -52,6 +57,7 @@ body {
     display: flex;
     list-style: none;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .header__item {
@@ -73,29 +79,23 @@ body {
     border-radius: 5px;
 }
 
-.carrucel-mob {
+.banner{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.none{
     display: none;
 }
 
-.banner-mob {
-    height: 80vw;
-    width: 95%;
-}
 
-.carousel-inner {
-    text-align: center;
-    margin-top: 50px;
-    padding-bottom: 30px;
-}
-
-.ancho {
-    width: 80vw;
-}
 
 
 
 /*----------- MAIN -----------*/
 
+
+/*------ LOGO FLOTANTE ------ */
 
 .div-logo-flotante {
     display: flex;
@@ -109,53 +109,82 @@ body {
     background-color: rgb(255, 254, 254);
     box-shadow: 0 0 10px 2px rgb(115, 115, 115);
     border-radius: 50%;
+    margin-top: 25%;
 }
+
+
+/* ------ TITULO  ------ */
 
 .titulo-index {
     font-size: 12vw;
     text-align: center;
-    margin: auto;
-    margin-top: 50px;
+    margin: 20px auto;
     font-weight: bold;
     color: white;
     font-family: 'titulo';
+   
+}
+
+.subtitulo{
+    font-family:'titulo';
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
 
 }
+
+/* ------ SECCION ------ */
 
 .section-index {
     display: flex;
-    margin-top: 50px;
+   
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    
+   
+}
+
+.fondo-blanco{
+    background-color: rgb(228, 226, 226);
+    border-top: 4px  solid rgb(23, 206, 93);
+    background-image: url(../recursos/banner/fondo-logo.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 300px;
 
 }
 
-.section-index .modelo {
-    height: 40vw;
-    margin-left: 30px;
+ .modelo {
+ 
     border-radius: 5%;
+    box-shadow: 0px 5px 5px 0px black;
 }
 
-.section-index .modelo:hover {
+.modelo:hover {
     opacity: 0.5;
     transition: all .3s;
 }
 
 
 .ropas {
-
-    margin-left: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 600px;
 
 }
 
 .card {
-    margin: 20px;
-    border-radius: 5%;
+    margin: 20px auto;
+    border-radius: 10px;
     background-color: #F2F2F2;
     height: 16rem;
     width: 16rem;
-    ;
+   box-shadow: 0px 5px 5px 0px black;
+
 }
 
 .card:hover {
@@ -164,11 +193,8 @@ body {
 }
 
 .ropas img {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-
-
+    height: 100%;
+    border-radius: 10px;
 }
 
 
@@ -188,7 +214,7 @@ body {
 .boton-verde {
     height: 50px;
     width: 150px;
-    border-radius: 5%;
+    border-radius: 5px;
     color: white;
     background-color: #0cbc6a;
     font-family: 'titulo';
@@ -196,7 +222,8 @@ body {
 }
 
 .boton-verde:hover {
-    background-color: #91c4ac;
+    background-color: #adb3b0;
+    transition: all .2s;
 }
 
 .banner-run {
@@ -230,7 +257,8 @@ body {
 
 .boton-run:hover {
     background: linear-gradient(45deg, #b63fcb, #2f5ed3);
-    transition: all 1s;
+    transition: all 2s;
+   
 }
 
 .div-calzado {
@@ -243,6 +271,8 @@ body {
     height: 50vw;
     margin: 50px 40px 0px;
     border-radius: 5%;
+    min-height: 400px;
+   
 }
 
 .div-calzado .calzado img:hover {
@@ -298,6 +328,7 @@ body {
 
 .redes {
     display: flex;
+    padding: 0;
 }
 
 
@@ -350,101 +381,47 @@ body {
 /* ---- MEDIA QUERYS ---- */
 
 
-@media (max-width:1200px) {
 
-    .section-index {
-        flex-direction: column;
-
-
-    }
-
-    .ropas {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        margin: 20px;
-    }
-}
-
-@media (max-width:840px) {
-    .header__nav {
-        justify-content: center;
-    }
-
-    .header__list {
-        flex-wrap: wrap;
-    }
-}
-
-
-@media (max-width:740px) {
-    .div-calzado {
-        align-items: center;
-        margin-left: 0;
-        margin: 20px;
-    }
-
-    .div-calzado .calzado img {
-        height: 70vw;
-        margin: 0;
-    }
-
-    .div-calzado p {
-        margin: 0;
-    }
-
-}
-
-@media (max-width:690px) {
-    .footer {
-        justify-content: center;
-        align-items: center;
-
-    }
-
-}
 
 @media (max-width:660px) {
 
-    .carrucel-desktop {
+    .banner{
         display: none;
     }
 
-    .carrucel-mob {
+    .banner-mob{
         display: block;
+        width: 100%;
     }
 
-    .section-index {
-        justify-content: center;
+    .subtitulo{
+        text-align: center;
     }
 
-    .section-index .modelo {
-        height: 65vw;
-        margin-left: 0;
-    }
 
-    .ropas {
-        margin-left: 0;
-        flex-direction: column;
-
-    }
+   .boton-run{
+    background: none;
+    background-color: rgb(209,13,37);
+   }
    
    .modelo{
-    width: 75vw;
+     width: 95%;
+
    }
-    .card {
-        margin: auto;
-        min-width: 75vw;
-        height: 400px;
-        margin-top: 20px;
-       
-    }
 
+   .section-index{
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+  
+   }
+   .ropas{
+    display: none;
+
+   }
+
+  
 }
-
 
 
 
