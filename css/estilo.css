@@ -104,6 +104,11 @@ body {
 /*----------- MAIN -----------*/
 
 
+/* BARRA LATERAL */
+
+
+
+
 /*------ LOGO FLOTANTE ------ */
 
 .div-logo-flotante {
@@ -466,36 +471,51 @@ body {
 
     .barra-lateral{
         position: absolute;
-        margin-right: 100px;
+        background-color: rgba(8, 8, 8, 0.479);
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
+
       
-        
     }
+ 
 
     .contenedor-lista{
-        background-color: red;
-        position: fixed;
-        text-align: center;
-        padding: 20px;
+        position: absolute;
         height: 100%;
-    
+        background-color: rgb(8, 8, 8);
+
          
     }
   
-    .header__list-mob{
+    .lista-barra{
+        display: flex;
         list-style: none;
         flex-direction: column;
-        align-items: center;
+        justify-content: start;
+       
+        
+    
+     
+        
         
     }
+  
 
+    .item-barra{
+        margin: 20px;
+        padding: 20px 20px;
+        font-size: 20px;
+       
+      
+    }
     
 
-    .header__link-mob{
+    .link-barra {
         text-decoration: none;
         color: white;
-        margin: 20px 0;
+      
         font-family: 'nike';
        
     }
