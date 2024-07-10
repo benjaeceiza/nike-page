@@ -38,13 +38,19 @@ function mostrarBarra() {
 
     const linkItem1 = document.createElement("a");
     linkItem1.innerText ="Niño/a";
+    linkItem1.href = "./pages/kids.html";
 
     const linkItem2 = document.createElement("a");
     linkItem2.innerText = "Mujer";
+    linkItem2.href = "./pages/women.html";
+
     const linkItem3 = document.createElement("a");
     linkItem3.innerText = "Hombre";
+    linkItem3.href = "./pages/men.html";
+
     const linkItem4 = document.createElement("a");
     linkItem4.innerText = "Accesorios";
+    linkItem4.href = "./page/accessories.html";
 
     linkItem1.className = "link-barra";
     linkItem2.className = "link-barra";
