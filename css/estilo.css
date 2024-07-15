@@ -7,16 +7,23 @@
 @import url(../recursos/klein.condensed-trial-extrabold.ttf);
 @import url(../recursos/jane-roe.bold-italic.ttf);
 
-/* FONDO BODY */
+/* CONTENEDORES */
 body {
    background-color: black;
+
 }
 
 .apoyo{
     display: flex;
     align-items: start;
     flex-direction: row-reverse;
+  
     
+}
+
+.contenido{
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -103,12 +110,6 @@ body {
 
 /*----------- MAIN -----------*/
 
-
-/* BARRA LATERAL */
-
-
-
-
 /*------ LOGO FLOTANTE ------ */
 
 .div-logo-flotante {
@@ -123,7 +124,7 @@ body {
     background-color: rgb(255, 254, 254);
     box-shadow: 0 0 10px 2px rgb(115, 115, 115);
     border-radius: 50%;
-    margin-top: 25%;
+    margin-top: 5%;
 }
 
 
@@ -302,11 +303,18 @@ body {
 }
 
 
+
+
+/*----------------    PAGES KIDS ------------------- */
+
+
+
+
 /* ---- FOOTER ---- */
 
 .div-apoyo-footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 100px;
     flex-wrap: wrap;
 }
@@ -475,7 +483,7 @@ body {
         display: flex;
         flex-direction: row-reverse;
 
-      
+        
     }
  
 
@@ -483,8 +491,10 @@ body {
         position: absolute;
         height: 100%;
         background-color: rgb(8, 8, 8);
-
-         
+        translate: 200px;
+       
+        
+        
     }
   
     .lista-barra{
@@ -493,10 +503,6 @@ body {
         flex-direction: column;
         justify-content: start;
        
-        
-    
-     
-        
         
     }
   

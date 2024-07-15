@@ -59,7 +59,7 @@ function mostrarBarra() {
     linkItem4.className = "link-barra";
 
     const imagenCarrito = document.createElement("img");
-    imagenCarrito.src ="./recursos/carrito.png";
+    imagenCarrito.src ="../recursos/carrito.png";
     const linkImagen = document.createElement("a");
     const itemCarrito = document.createElement("li");
     itemCarrito.className = "item-barra";
